@@ -24,6 +24,8 @@ The application allows user to:
 1. Clone Repository
 ```
 git clone git@github.com:Vidhya-Rajendran/ticket_mgmt_backend.git
+git checkout master
+git pull
 ```
 2. Installing project requirements
 ```
