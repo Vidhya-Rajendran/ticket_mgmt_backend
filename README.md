@@ -36,7 +36,7 @@ pip install --upgrade setuptools
 sudo apt-get install libpq-dev
 sudo apt-get install redis-server
 pip install -r requirements.txt
-
+```
 3. To run Redis
 ```
 sudo systemctl start redis
@@ -56,7 +56,6 @@ sudo service postgresql status
 7. To view celery worker log
 ```
 celery -A ticket_management worker --loglevel=info
-```
 ```
 8. To migrate 
 ```
