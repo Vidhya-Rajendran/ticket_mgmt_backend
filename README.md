@@ -34,29 +34,40 @@ sudo apt install postgresql
 pip install --upgrade pip
 pip install --upgrade setuptools
 sudo apt-get install libpq-dev
+sudo apt-get install redis-server
 pip install -r requirements.txt
-```
-3. To run the project
-```
-python manage.py runserver
-```
-4. To run Redis
+
+3. To run Redis
 ```
 sudo systemctl start redis
 ```
-5. To check Redis status
+4. To check Redis status
 ```
 sudo systemctl status redis
 ```
-6. To Run Postgresql
+5. To Run Postgresql
 ```
 sudo service postgresql start
 ```
-7. To check postgresql Status
+6. To check postgresql Status
 ```
 sudo service postgresql status
 ```
-8. To view celery worker log
+7. To view celery worker log
 ```
 celery -A ticket_management worker --loglevel=info
+```
+```
+8. To migrate 
+```
+python3 manage.py migrate
+```
+9. To create super user
+```
+python3 manage.py createsuperuser
+enter user name, enter mail id, enter password (login with this credentials to access django admin)
+```
+10. To run the project
+```
+python3 manage.py runserver
 ```
