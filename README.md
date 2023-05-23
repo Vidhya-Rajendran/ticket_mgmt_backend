@@ -31,6 +31,9 @@ git pull
 ```
 sudo apt update
 sudo apt install postgresql
+pip install --upgrade pip
+pip install --upgrade setuptools
+sudo apt-get install libpq-dev
 pip install -r requirements.txt
 ```
 3. To run the project
