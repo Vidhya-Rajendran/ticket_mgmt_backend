@@ -29,6 +29,8 @@ git pull
 ```
 2. Installing project requirements
 ```
+sudo apt update
+sudo apt install postgresql
 pip install -r requirements.txt
 ```
 3. To run the project
